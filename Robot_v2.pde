@@ -388,3 +388,24 @@ class InputPro
     }
   }
 }
+class Snake
+{
+Robot[][] ro;
+int row=5;
+int column=1;
+  Snake(int row,int column)
+  {
+    ro= new Robot[column][row];
+    for(int i=0;i<4;i++)
+    {
+    this.row=row-1;
+    this.column=column;
+    ro[i][i]=new Robot(this.column,this.row);
+  }
+    
+  }
+ void drawSnake()
+ {
+ 
+ }
+}
